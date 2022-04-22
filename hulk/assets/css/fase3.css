@@ -1,9 +1,5 @@
-html {
-    height: 100%;
-}
-
 body {
-    background-image: url(../assets/images/explosion.png);
+    background-image: url(../images/explosion.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;

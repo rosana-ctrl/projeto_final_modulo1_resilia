@@ -1,9 +1,5 @@
-html {
-    height: 100%;
-}
-
 body {
-    background-image: url(../assets/images/background_hulk_vs_red_hulk.jpeg);
+    background-image: url(../images/background_hulk_vs_red_hulk.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
