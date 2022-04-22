@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fase3Hulk</title>
-    <link rel="stylesheet" href="fase3.css">
-
+    <title>FASE 3 HULK VERMELHO</title>
+    <link rel="stylesheet" href="../../assets/css/general.css">
+    <link rel="stylesheet" href="../assets/css/fase3.css">
 </head>
 
 <body>
     <div class="container">
-        <h1 class="container1"> Você chegou ao laboratório. Corra, você precisar retirar o elemento certo para que a
-            bomba não exploda!</h1>
+        <h1 class="container1"> Você chegou ao laboratório. Corra, você precisar retirar dois elementos corretamente
+            para que a
+            bomba exploda!</h1>
     </div>
     <div class="container2">
         <h3> Não esqueça, essa é a sua única chance! </h3>
@@ -26,13 +27,20 @@
         </ul>
     </div>
     <div id="avance">
-        <button class="button" onclick="redirecione();">Vá para fora!!</button>
+        <button class="button" onclick="redirecione('../vitoria/vitoria.html');">Vá para fora!!</button>
+
     </div>
+    <footer>
+        <p>
+            *Imagem utilizada para fins de aprendizagem.
+        </p>
+    </footer>
+    <script src="../../assets/js/general.js"> </script>
+    <script src="../assets/js/fase3.js"></script>
+    <script>
+        setTimeout(retireElemento, 1000);
+        ocultar('avance');
+    </script>
 </body>
-<script src="./fase3.js"></script>
-<script>
-    setTimeout(retireElemento, 1000);
-    ocultar();
-</script>
 
 </html>

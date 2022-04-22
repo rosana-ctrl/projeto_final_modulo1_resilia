@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HULK</title>
-    <link rel="stylesheet" href="fase1.css">
+    <title>FASE 1 MULHER HULK</title>
+    <link rel="stylesheet" href="../../assets/css/general.css">
+    <link rel="stylesheet" href="../assets/css/fase1.css">
 </head>
 
 <body>
@@ -14,13 +15,13 @@
     <div class="container">
         <h1 class="container1"> Hulk Vermelho quer transformar toda a humanidade em Hulks. Assim todos poderão sempre se
             defender. Mas a Mulher Hulk
-            sabe o que é o sofrimento desse fardo e não irá permitir que seu inimigo realize essa terrível missão!</h1>
+            sabe o tamanho desse fardo e não irá permitir que seu inimigo realize essa terrível missão!</h1>
 
         <br>
         <h2 class="container2">Mulher Hulk precisa entrar S.H.I.E.L.D. sem ser notado. A senha é nome de um integrande
             que não
             fez parte do primeiro grupo de
-            vingadores. Mas lembre-se você só tem uma chance!</h2>
+            vingadores.</h2>
     </div>
     <div class="escolha">
         <p>
@@ -36,16 +37,20 @@
             realizar seu plano.</p>
 
         Escolha a sala:
-        <button class="button" onclick="redirecione();">SALA 1</button>
-        <button class="button" onclick="redirecione1();">SALA 2</button>
+        <button class="button" onclick="redirecione('../fase2/fase2.html');">SALA 1</button>
+        <button class="button" onclick="redirecione('../../gameOver.html');">SALA 2</button>
     </div>
+    <footer>
+        <p>
+            *Imagem utilizada para fins de aprendizagem.
+        </p>
+    </footer>
+    <script src="../../assets/js/general.js"> </script>
+    <script src="../assets/js/fase1.js"> </script>
+    <script>
+        setTimeout(escolhaHeroi, 1000);
+        ocultar('divBotoesSalas');
+    </script>
 </body>
-
-<script src="./fase1.js"> </script>
-<script>
-    setTimeout(escolhaHeroi, 1000);
-    ocultar();
-</script>
-<footer>Imagem utilizada para fins de aprendizagem</footer>
 
 </html>

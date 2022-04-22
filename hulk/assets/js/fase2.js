@@ -3,10 +3,6 @@ var ataque1 = 20;
 var ataque2 = 10;
 var ataque3 = 10;
 
-function mostraFrase(frase) {
-    alert(frase);
-}
-
 function mostraVidaInimigo() {
     alert("Vida do Inimigo: " + vidaTotalInimigo);
 }
@@ -34,17 +30,9 @@ function escolhaAtaque() {
 
     if (vidaTotalInimigo > 0) {
         alert('PERDEMOS =/');
-        redirecione('../game_over/gameOver.html');
+        redirecione('../../gameOver.html');
     } else {
         alert('GANHAMOS!!!');
-        exibir();
+        exibir('avance');
     }
-}
-
-function exibir() {
-    document.getElementById("avance").style.visibility = 'visible';
-}
-
-function ocultar() {
-    document.getElementById("avance").style.visibility = 'hidden';
 }
