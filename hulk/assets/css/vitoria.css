@@ -8,12 +8,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url(hulk.png);
+    background-image: url(../images/hulk.png);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
     color: black;
-
 }
 
 .container {
@@ -24,7 +23,6 @@ body {
     margin-left: 20em;
     margin-right: 20em;
     border-radius: 10em;
-
 }
 
 .button {

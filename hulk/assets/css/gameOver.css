@@ -8,14 +8,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url(GameoverSMB-1.png);
+    background-image: url(../images/game_over.png);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
     color: black;
-
 }
-
 
 .button {
     display: flex;

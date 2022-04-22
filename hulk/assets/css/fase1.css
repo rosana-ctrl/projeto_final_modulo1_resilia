@@ -3,41 +3,25 @@ html {
 }
 
 body {
-    background-image: url(background_body.jpeg);
-    background-position: center;
+    background-image: url(../images/hulk.png);
+    background-position: 50%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 100%;
     height: 100%;
+    margin-top: 20%;
     background-color: rgba(162, 205, 72, 0.700);
 }
 
-.section {
+.container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 100%;
-
+    float: left;
 }
 
-h1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: solid black 1px;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.700);
-    font-weight: 400;
-    font-size: 1.3rem;
-    padding: 1.5em;
-    margin-right: 10em;
-    text-align: center;
-    gap: 0.3em;
-}
-
-.ataque {
+.container1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,7 +37,23 @@ h1 {
     gap: 0.3em;
 }
 
-#avance {
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid black 1px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.700);
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding: 1.5em;
+    margin-right: 5em;
+    text-align: center;
+    gap: 0.3em;
+}
+
+.escolha {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -63,7 +63,27 @@ h1 {
     background-color: rgba(255, 255, 255, 0.700);
     font-weight: 400;
     font-size: 1.3rem;
-    margin-right: 10em;
+    padding: 0;
+    gap: 0.3em;
+    width: 30%;
+    margin-left: 25em;
+    margin-bottom: auto;
+}
+
+#divBotoesSalas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: solid black 1px;
+    border-radius: 20px;
+    background-color: rgba(162, 205, 72, 0.700);
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding: 1.5em;
     text-align: center;
     gap: 0.3em;
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-top: 1em;
 }

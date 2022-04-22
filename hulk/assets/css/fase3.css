@@ -3,13 +3,12 @@ html {
 }
 
 body {
-    background-image: url(png-transparent-explosion-cartoon-fashion-explosion-cartoon-fashion.png);
+    background-image: url(../assets/images/explosion.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
     margin-top: 20%;
-
 }
 
 .container1 {

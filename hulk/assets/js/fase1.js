@@ -1,12 +1,3 @@
-function redirecione() {
-    window.location.replace("../fase2/fase2.html");
-}
-
-function redirecione1() {
-    document.write("Você escolheu a sala errada e foi interceptado")
-    window.location.replace("../hulk/gameOver.html");
-}
-
 function mostra(frase) {
     alert(frase);
 }
@@ -34,8 +25,6 @@ function escolhaHeroi() {
         window.location.replace('../../index/gameOver.html');
     }
 }
-
-var visibilidade = true;
 
 function exibir() {
     document.getElementById("divBotoesSalas").style.visibility = 'visible';

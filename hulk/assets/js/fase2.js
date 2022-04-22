@@ -1,16 +1,7 @@
-// Digitar o ataque, com o prompt
-// validar o ataque
-// se o ataque for certo, deverá mostrar um alerta e mostrar o botao de proxima fase
-// se estiver errado, deverá retornar e pedir para perguntar de novo
-// o máximo de tentativas sao 3 vezes
-// exibir a mensagem de game over
-// voltar para a tela inicial
-
 var vidaTotalInimigo = 50;
 var ataque1 = 20;
 var ataque2 = 10;
 var ataque3 = 10;
-
 
 function mostraFrase(frase) {
     alert(frase);
@@ -43,14 +34,12 @@ function escolhaAtaque() {
 
     if (vidaTotalInimigo > 0) {
         alert('PERDEMOS =/');
-        window.location.replace('../../index/gameOver.html');
+        redirecione('../game_over/gameOver.html');
     } else {
         alert('GANHAMOS!!!');
         exibir();
     }
 }
-
-var visibilidade = true;
 
 function exibir() {
     document.getElementById("avance").style.visibility = 'visible';
@@ -58,8 +47,4 @@ function exibir() {
 
 function ocultar() {
     document.getElementById("avance").style.visibility = 'hidden';
-}
-
-function redirecione() {
-    window.location.replace("../fase3/fase3.html");
 }
