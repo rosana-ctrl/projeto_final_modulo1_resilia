@@ -1,25 +1,31 @@
-body{
+html {
+    height: 100%;
+}
+
+body {
     background-image: url(background_body.jpeg);
-    background-position:100%;
-    background-repeat: no-repeat;
+    background-position: center;
+    /* background-repeat: no-repeat; */
     background-size: cover;
     width: 100%;
     height: 100%;
-   
+
 }
-header{
+
+header {
     display: flex;
     text-align: center;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.700);
     color: green;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 100%;
     padding-left: 50px;
     padding-top: 0%;
-    align-items:stretch;
+    align-items: stretch;
 }
-.contexto{
-    border-style:inset;
+
+.contexto {
+    border-style: inset;
     border: 0%;
     background: #56cf44;
     color: black;
@@ -39,45 +45,47 @@ header{
     padding: 10px;
 }
 
-h3{
+h3 {
     text-align: center;
     margin: auto;
 }
-.escolhaPersonagens{
-    padding: 0%;
+
+.escolhaPersonagens {
     display: flex;
     flex-direction: row;
-    /* margin-top: 10px; */
-    border: 0px;
-    margin: auto;
+    margin: 10px;
     justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.700);
 }
-.hulk{
-    display:flex;
+
+.hulk {
+    display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: space-between;
     max-width: 20%;
-  
-    
+
+
 }
-.mulherHulk{
-    display:flex;
+
+.mulherHulk {
+    display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: space-between;
     max-width: 20%;
-  
-  
+
+
 }
-.hulkVermelho{
-    display:flex;
+
+.hulkVermelho {
+    display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: space-between;
     max-width: 20%;
- 
-   
+
+
 }
-.button{
+
+.button {
     color: black;
     background-color: green;
     padding: 10px;
@@ -86,43 +94,39 @@ h3{
     height: 30px;
     margin: 5px;
     margin-bottom: 5px;
-   
+
 }
-.button-red{
+
+.button-red {
     color: black;
-    background-color:red;
+    background-color: red;
     padding: 10px;
     font-weight: bold;
     border-radius: 5px;
     height: 30px;
     margin: 5px;
     margin-bottom: 5px;
-    
-    
+
 }
-/* Tooltip container */
+
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-  }
-  
-  /* Tooltip text */
-  .tooltip .tooltiptext {
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
     visibility: hidden;
     width: 100%;
-    background-color: black;
-    color: #fff;
+    background-color: rgba(162, 205, 72, 0.700);
+    color: black;
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-   
-    /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
-  }
-  
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .tooltip:hover .tooltiptext {
+}
+
+.tooltip:hover .tooltiptext {
     visibility: visible;
-  }
+}

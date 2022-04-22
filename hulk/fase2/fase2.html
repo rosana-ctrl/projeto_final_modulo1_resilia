@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HULK</title>
+    <link rel="stylesheet" href="fase2.css">
+
+
+</head>
+
+<body>
+
+    <section class="section">
+
+
+        <div>
+            <h1> Você entrou na sala e o Hulk vermelho está te esperando. O mundo depende de você, LUTE! </h1>
+            <h1> Descubra a combinação certa de ataques e avance! </h1>
+
+        </div>
+        <div class="ataque">
+            <p>
+                Ecolha seu Ataque:<br>
+                1. Soco e chute<br>
+                2. Chute e empurrar<br>
+                3. Empurrar e soco<br>
+            </p>
+            <div id="avance">
+                <button class="button" onclick="redirecione();">Avance!</button>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="./fase2.js"> </script>
+</body>
+<script>
+    setTimeout(escolhaAtaque, 1000);
+    ocultar();
+</script>
+
+</html>

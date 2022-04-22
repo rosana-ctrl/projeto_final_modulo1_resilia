@@ -1,37 +1,46 @@
-// Digitar o ataque, com o prompt
-// validar o ataque
-// se o ataque for certo, deverá mostrar um alerta e mostrar o botao de proxima fase
-// se estiver errado, deverá retornar e pedir para perguntar de novo
-// o máximo de tentativas sao 3 vezes
-// exibir a mensagem de game over
-// voltar para a tela inicial
+function redirecione() {
+    window.location.replace("../fase2/fase2.html");
+}
+
+function redirecione1() {
+    document.write("Você escolheu a sala errada e foi interceptado")
+    window.location.replace("../hulk/gameOver.html");
+}
 
 function mostra(frase) {
-    //document.write(frase);
     alert(frase);
 }
 
-function escolhaAtaque() {
+function escolhaHeroi() {
     var contador = 1
 
     while (contador <= 3) {
+        var heroi = parseInt(prompt("Digite o número equivalente do super Herói!"));
 
-        var ataque = parseInt(prompt("Digite o número equivalente do seu ataque"));
-
-        if (ataque == 1) {
-            mostra("Parabéns, você venceu essa luta, siga para a próxima fase!");
+        if (heroi == 3) {
+            mostra("Parabéns, você acertou, escolha a sala!");
+            exibir();
             break;
-        } else if (ataque == 2 || ataque == 3) {
-            mostra("Você recebeu um ataque mais forte, tente novamente");
+        } else if (heroi == 2 || heroi == 1) {
+            mostra("Você não acertou, tente novamente");
 
-        } else {
+        } else if (contador <= 3) {
             mostra("digite somente as letras das opções apresentadas")
         }
 
         contador = contador + 1;
-        
     }
-
+    if (contador >= 4) {
+        window.location.replace('../../index/gameOver.html');
+    }
 }
 
-escolhaAtaque();
+var visibilidade = true;
+
+function exibir() {
+    document.getElementById("divBotoesSalas").style.visibility = 'visible';
+}
+
+function ocultar() {
+    document.getElementById("divBotoesSalas").style.visibility = 'hidden';
+}

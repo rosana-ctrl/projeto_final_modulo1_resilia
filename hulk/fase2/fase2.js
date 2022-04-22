@@ -26,17 +26,15 @@ function escolhaAtaque() {
     while (contador <= 3) {
         var ataque = parseInt(prompt("Digite o número equivalente do seu ataque"));
 
-        if (ataque > 3) {
-            mostraFrase("digite somente as letras das opções apresentadas");
-            continue;
-        }
-
         if (ataque == 1) {
             vidaTotalInimigo -= ataque1;
         } else if (ataque == 2) {
             vidaTotalInimigo -= ataque2;
-        } else {
+        } else if (ataque == 3) {
             vidaTotalInimigo -= ataque3;
+        } else {
+            mostraFrase("digite somente as letras das opções apresentadas");
+            continue;
         }
 
         contador++;
@@ -45,10 +43,23 @@ function escolhaAtaque() {
 
     if (vidaTotalInimigo > 0) {
         alert('PERDEMOS =/');
-        window.location('./fase2_hulk.html');
+        window.location.replace('../../index/gameOver.html');
     } else {
         alert('GANHAMOS!!!');
+        exibir();
     }
 }
 
-escolhaAtaque();
+var visibilidade = true;
+
+function exibir() {
+    document.getElementById("avance").style.visibility = 'visible';
+}
+
+function ocultar() {
+    document.getElementById("avance").style.visibility = 'hidden';
+}
+
+function redirecione() {
+    window.location.replace("../fase3/fase3.html");
+}

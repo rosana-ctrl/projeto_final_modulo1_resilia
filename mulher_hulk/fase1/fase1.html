@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HULK</title>
+    <link rel="stylesheet" href="fase1.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="container1"> Hulk Vermelho quer transformar toda a humanidade em Hulks. Assim todos poderão sempre se
+            defender. Mas a Mulher Hulk
+            sabe o que é o sofrimento desse fardo e não irá permitir que seu inimigo realize essa terrível missão!</h1>
+
+        <br>
+        <h2 class="container2">Mulher Hulk precisa entrar S.H.I.E.L.D. sem ser notado. A senha é nome de um integrande
+            que não
+            fez parte do primeiro grupo de
+            vingadores. Mas lembre-se você só tem uma chance!</h2>
+    </div>
+    <div class="escolha">
+        <p>
+            Defina aqui o número equivalente do herói:<br>
+            1. Thor<br>
+            2. Homem de Ferro<br>
+            3. Capitão América<br>
+        </p>
+    </div>
+    <div id="divBotoesSalas">
+        <p> Você conseguiu encontrar a senha. Entre na S.H.I.E.L.D e continue tentando impedir hulk Vermelho de
+            conseguir
+            realizar seu plano.</p>
+
+        Escolha a sala:
+        <button class="button" onclick="redirecione();">SALA 1</button>
+        <button class="button" onclick="redirecione1();">SALA 2</button>
+    </div>
+</body>
+
+<script src="./fase1.js"> </script>
+<script>
+    setTimeout(escolhaHeroi, 1000);
+    ocultar();
+</script>
+<footer>Imagem utilizada para fins de aprendizagem</footer>
+
+</html>
