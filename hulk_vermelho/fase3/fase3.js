@@ -1,9 +1,9 @@
 var elementos = ['água', 'terra', 'cobalto', 'cesio', 'iodo'];
-var elementosCorretos = ['água', 'terra'];
+var elementosCorretos = ['cobalto', 'cesio', 'iodo'];
 
 function retireElemento() {
 
-    var contador = 0
+    var contador = 1
 
     while (contador < 3) {
         var remove = prompt("Digite o elemento que você deseja retirar");
