@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HULK</title>
-    <link rel="stylesheet" href="fase1.css">
+    <title>FASE 1 HULK VERMELHO</title>
+    <link rel="stylesheet" href="../../assets/css/general.css">
+    <link rel="stylesheet" href="../assets/css/fase1.css">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
         <h2 class="container2">Hulk Vermelho precisa entrar S.H.I.E.L.D. sem ser notado. A senha é nome de um integrande
             que não
             fez parte do primeiro grupo de
-            vingadores. Mas lembre-se você só tem uma chance!</h2>
+            vingadores.</h2>
     </div>
     <div class="escolha">
         <p>
@@ -34,15 +35,16 @@
             químicos.</p>
 
         Escolha a sala:
-        <button class="button" onclick="redirecione();">SALA 1</button>
-        <button class="button" onclick="redirecione1();">SALA 2</button>
+        <button class="button" onclick="redirecione('../fase2/fase2.html');">SALA 1</button>
+        <button class="button" onclick="redirecione('../../gameOver.html');">SALA 2</button>
     </div>
 </body>
 
-<script src="./fase1.js"> </script>
+<script src="../../assets/js/general.js"> </script>
+<script src="../assets/js/fase1.js"> </script>
 <script>
     setTimeout(escolhaHeroi, 1000);
-    ocultar();
+    ocultar('divBotoesSalas');
 </script>
 <footer>Imagem utilizada para fins de aprendizagem</footer>
 

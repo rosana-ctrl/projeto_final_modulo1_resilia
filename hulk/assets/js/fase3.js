@@ -15,20 +15,12 @@ function retireElemento() {
     }
 
     if (compareElementos()) {
-        exibir()
+        exibir('avance')
     } else {
-        document.write("game over")
+        redirecione('../../gameOver.html');
     }
 }
 
 function compareElementos() {
     return elementos.length === elementosCorretos.length && elementos.every((value, index) => value === elementosCorretos[index]);
-}
-
-function exibir() {
-    document.getElementById("avance").style.visibility = 'visible';
-}
-
-function ocultar() {
-    document.getElementById("avance").style.visibility = 'hidden';
 }

@@ -1,9 +1,8 @@
 var elementos = ['água', 'terra', 'cobalto', 'cesio', 'iodo'];
-var elementosCorretos = ['água', 'terra'];
+var elementosCorretos = ['cobalto', 'cesio', 'iodo'];
 
 function retireElemento() {
-
-    var contador = 0
+    var contador = 1
 
     while (contador < 3) {
         var remove = prompt("Digite o elemento que você deseja retirar");
@@ -15,28 +14,13 @@ function retireElemento() {
         contador++;
     }
 
-    console.log(elementos);
-
     if (compareElementos()) {
-        exibir()
+        exibir('avance')
     } else {
-        document.write("game over")
+        redirecione('../../gameOver.html');
     }
 }
 
 function compareElementos() {
     return elementos.length === elementosCorretos.length && elementos.every((value, index) => value === elementosCorretos[index]);
-}
-var visibilidade = true;
-
-function exibir() {
-    document.getElementById("avance").style.visibility = 'visible';
-}
-
-function ocultar() {
-    document.getElementById("avance").style.visibility = 'hidden';
-}
-
-function redirecione() {
-    window.location.replace("../vitoria/vitoria.html");
 }
