@@ -53,25 +53,24 @@ h3 {
     background-color: rgba(255, 255, 255, 0.700);
 }
 
-.hulk {
+.divPersonagem {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 20%;
+    max-width: 300px;
+    padding: 20px 0;
 }
 
-.mulherHulk {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 20%;
+.pHistoriaPersonagem {
+    font-size: 10px;
+    margin: 0;
+    display: none;
 }
 
-.hulkVermelho {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 20%;
+.pHistoriaPersonagemDesktop {
+    font-size: 13px;
+    margin: 0;
+    display: block;
 }
 
 .button {
@@ -81,8 +80,7 @@ h3 {
     font-weight: bold;
     border-radius: 5px;
     height: 30px;
-    margin: 5px;
-    margin-bottom: 5px;
+    margin: auto;
 }
 
 .button-red {
@@ -92,8 +90,7 @@ h3 {
     font-weight: bold;
     border-radius: 5px;
     height: 30px;
-    margin: 5px;
-    margin-bottom: 5px;
+    margin: auto;
 }
 
 .tooltip {
@@ -116,4 +113,72 @@ h3 {
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+.divImgPersonagem {
+    height: 350px;
+}
+
+.divImgPersonagem img {
+    max-height: 340px;
+}
+
+@media (max-width: 700px) {
+    header {
+        padding-left: 0px;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    h1 {
+        display: flex;
+        margin: 0;
+        font-size: smaller;
+    }
+
+    h3 {
+        font-size: smaller;
+    }
+
+    .escolhaPersonagens {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 100px;
+    }
+
+    .button {
+        width: 10em;
+        font-size: smaller;
+        height: 43px;
+    }
+
+    .button-red {
+        font-size: smaller;
+        height: 43px;
+    }
+
+    .divPersonagem {
+        max-width: 160px;
+        margin: 10px 0 20px 0;
+    }
+
+    .pHistoriaPersonagem {
+        display: block;
+    }
+
+    .pHistoriaPersonagemDesktop {
+        display: none;
+    }
+
+    .divImgPersonagem {
+        height: 210px;
+    }
+
+    .divImgPersonagem img {
+        max-height: 200px;
+    }
 }
